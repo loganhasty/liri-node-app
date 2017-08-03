@@ -80,13 +80,29 @@ if (command === "movie-this"){
     });
 };
 
+
+//Read random.txt, analyze the command and search term and output the info.
 if (command === "do-what-it-says"){
     fs.readFile("./random.txt", "utf-8", function(err, data){
     if (err) {
         console.log(err);
     }
-    parsedData = data.split(",");
-    command = parsedData[0];
-    searchTerms = parsedData[1];
+    var output = data.split(",");
+    command = output[0];
+    searchTerms = output[1];
+
+    spotify.search(
+        { type: 'track', 
+        query: searchTerms, 
+        limit: 1 }, function(err, data) {
+            if (!err){
+                console.log("\n" + data.tracks.items[0].name);
+                console.log(data.tracks.items[0].artists[0].name);
+                console.log(data.tracks.items[0].preview_url);
+                console.log(data.tracks.items[0].album.name + "\n");
+            } else {
+                console.log("Error! Try again.\nDeafult song: 'I Saw the Sign' by Ace of Base");
+            }
+        });
     });
 };

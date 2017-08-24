@@ -12,5 +12,5 @@ do-what-it-says (Reads a text file and scans for the song name, which then searc
 Parameter Two:
 
 Anything you want, just put it in quotes!
- Example: "The Waterboy"
+ Example: "The Waterboy" or 
           "Living La Vida Loca"

@@ -6,9 +6,9 @@ To use this app, call the node file in the console, followed by two parameters. 
 
 First parameter:
 
-movie-this (Will return the top IMDB result from your search); 
-songify-this (Will return the top result from Spotify for your search); 
-do-what-it-says (Reads a text file and scans for the song name, which then searches Spotify)
+-movie-this (Will return the top IMDB result from your search); 
+-songify-this (Will return the top result from Spotify for your search); 
+-do-what-it-says (Reads a text file and scans for the song name, which then searches Spotify)
 
 
 Second parameter:

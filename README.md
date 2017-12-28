@@ -1,6 +1,6 @@
-# liri-node-app
+# social-node
 
-Liri is a Node.js app that utilizes Twitter, Spotify and Request NPM packages. It calls the Twitter, Spotify and/or IMDB APIs to retrieve information on the search terms the user enters.
+Social Node is a Node.js app that utilizes Twitter, Spotify and Request NPM packages. It calls the Twitter, Spotify and/or IMDB APIs to retrieve information on the search terms the user enters.
 
 To use this app, call the node file in the console, followed by two parameters. The first parameter will tell the app which action to perform on the second parameter.
 
@@ -16,4 +16,4 @@ Second parameter:
 Search terms. *Be sure to enclose in quotes*
 
 Example command:
-node liri.js movie-this "The Waterboy" //Will return the details for the Adam Sandler movie "The Waterboy"
+node app.js movie-this "The Waterboy" //Will return the details for the Adam Sandler movie "The Waterboy"
